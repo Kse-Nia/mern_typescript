@@ -18,12 +18,19 @@ model Post {
 }
 
 model User {
-  id        String  @id @default(auto()) @map("_id") @db.ObjectId
-  email     String  @unique
-  firstName String?
-  lastName  String?
-  role      String  @default("USER")
-  posts     Post[]
+  id              String       @id @default(auto()) @map("_id") @db.ObjectId
+  email           String       @unique
+  emailVerified   Boolean      @default(false)
+  firstName       String?
+  lastName        String?
+  image           String?
+  hashedPassword  String?
+  role            String       @default("USER")
+  posts           Post[]
+  conversationsId String[]     @db.ObjectId
+  conversations   Conversation @relation(fields: [conversationsId], references: [id])
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
 }
 
 model Comment {
