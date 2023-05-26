@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Social Network Project
+
+This project is a social network app.
+User can register, login, create posts, add comments, and engage in real-time chats with other users.
+It also supports role-based functionality with roles ( simple users and administrators).
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the tests](#running-the-tests)
+- [Deployment](#deployment)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before you begin, ensure you have met the following requirements:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Latest version of Node.js and yarn are installed
+- You have MongoDB installed
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Fork and clone the repository.
+2. Install the dependencies:
 
-## Learn More
+``` yarn install ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` next start ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Open `localhost:3000` in your browser.
 
-## Deploy on Vercel
+## Running the tests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Explain how to run the automated tests for this system.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+
+Add additional notes about how to deploy this on a live system.
+
+## Built With
+
+## Contributing
+If you want to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+
